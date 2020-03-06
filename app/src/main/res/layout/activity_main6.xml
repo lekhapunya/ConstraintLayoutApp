@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guideline">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" >
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="BUTTON1"/>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="BUTTON2"/>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="BUTTON3"/>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="BUTTON4"/>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="BUTTON5"/>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="BUTTON6"/>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="BUTTON7"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
